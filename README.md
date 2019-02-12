@@ -12,7 +12,7 @@ A	B	C	D	E	F	G	H	I	j
 # 3.	Converting ch=’2’ to number 2 (ch-‘0’).
 
 # 4.	Binary search:
-'''
+~~~
 While(end>=start) {
 Mid = end+ (end-start)/2;
 If(target==arr[mid])
@@ -23,6 +23,6 @@ Else if(target<arr[mid])
 	End = mid-1;
 }
 
-'''
+~~~
 The binary search depends on the start and end index only.
 
