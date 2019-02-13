@@ -13,16 +13,48 @@ A	B	C	D	E	F	G	H	I	j
 
 # 4.	Binary search:
 ~~~
-While(end>=start) {
-Mid = end+ (end-start)/2;
-If(target==arr[mid])
-	Return mid;
-Else if(target>=arr[mid])
-	Start=mid+1;
-Else if(target<arr[mid])
-	End = mid-1;
-}
+  public boolean binarySearch(int target, int[] nums ){
+        
+        int start=0;
+        int end = nums.length-1;
+        int mid=0;
+         while(end>=start)
+            {
+                mid=start+(end-start)/2;
+             
+                if(nums[mid]==target)
+                    return true;
+                else if(nums[mid]>=target)
+                    end=mid-1;
+                else
+                    start=mid+1;
 
+            } 
+        
+        return false;
+              
+        }       
+    
 ~~~
 The binary search depends on the start and end index only.
+
+# 5. Median of two sorted array
+	if you want to make the nums1 length always remain greater
+
+	~~~
+
+	 if(nums1.length<nums2.length){
+           return  intersection(nums2,nums1);
+        }
+	~~~
+
+	split both the arrays in equal parts so that sum is equal
+
+# 6. Set to array
+
+~~~
+ int j = 0;
+		for (Integer s: set)
+			array[j++] = s;
+~~~
 
