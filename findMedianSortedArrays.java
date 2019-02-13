@@ -39,4 +39,12 @@ class Solution {
 		return 0.0;
 
 	}
+
+    public static void main(String[] args) {
+        int[] x = {1, 3, 8, 9, 15};
+        int[] y = {7, 11, 19, 21, 18, 25};
+
+        MedianOfTwoSortedArrayOfDifferentLength mm = new MedianOfTwoSortedArrayOfDifferentLength();
+        mm.findMedianSortedArrays(x, y);
+    }
 }
