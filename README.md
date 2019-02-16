@@ -41,12 +41,12 @@ The binary search depends on the start and end index only.
 # 5. Median of two sorted array
 	if you want to make the nums1 length always remain greater
 
-~~~
+	~~~
 
 	 if(nums1.length<nums2.length){
            return  intersection(nums2,nums1);
         }
-~~~
+	~~~
 
 	split both the arrays in equal parts so that sum is equal
 
@@ -58,3 +58,14 @@ The binary search depends on the start and end index only.
 			array[j++] = s;
 ~~~
 
+# 7. Search insert position in a sorted array
+
+We need to perform a normal binary search and return mid. And at last just need to check following
+
+```
+ if(nums[mid]>target)
+            return mid;
+        else if(nums[mid]<target)
+            return mid+1;
+
+```
