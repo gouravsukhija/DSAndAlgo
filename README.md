@@ -58,3 +58,14 @@ The binary search depends on the start and end index only.
 			array[j++] = s;
 ~~~
 
+# 7. Search insert position in a sorted array
+
+We need to perform a normal binary search and return mid. And at last just need to check following
+
+```
+ if(nums[mid]>target)
+            return mid;
+        else if(nums[mid]<target)
+            return mid+1;
+
+```
