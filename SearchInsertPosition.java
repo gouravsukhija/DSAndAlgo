@@ -1,3 +1,4 @@
+
 class Solution {
     public int searchInsert(int[] nums, int target) {
         int start=0;
@@ -20,4 +21,3 @@ class Solution {
             
         return mid;
     }
-}

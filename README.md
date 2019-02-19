@@ -69,3 +69,4 @@ We need to perform a normal binary search and return mid. And at last just need 
             return mid+1;
 
 ```
+
