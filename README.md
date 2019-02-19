@@ -69,4 +69,23 @@ We need to perform a normal binary search and return mid. And at last just need 
             return mid+1;
 
 ```
+# 8. Dynamic programming tip
 
+create an array to store results
+
+# 9. Print array
+
+```
+System.out.println(Arrays.toString(dp));
+
+```
+# 10. BinarySearch available api
+
+```
+  int i = Arrays.binarySearch(dp, 0, len, num);
+            if (i < 0) {
+                i = -(i + 1);
+            }
+```
+
+And then we can use the i to insert it 
